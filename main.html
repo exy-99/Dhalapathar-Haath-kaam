@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .header {
+        width: 100%;
+        height: 80px;
+        background-color: rgb(234, 201, 201);
+        /* Center the ul element within the header */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .header ul {
+        display: flex; /* This arranges the li items horizontally */
+        list-style: none; /* Removes the bullet points */
+        padding: 0; /* Removes default browser padding */
+        margin: 0; /* Removes default browser margin */
+        gap: 30px; /* Adds space between the list items */
+    }
+   
+    .header ul li a {
+        text-decoration: none; /* Removes underline from links */
+        color: black; /* Sets link color */
+        font-size: 18px; /* Sets font size */
+        padding: 10px 15px; /* Adds padding for better click area */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    }
+    .header ul li a:hover {
+        background-color: rgb(0, 0, 0); /* Changes background on hover */
+        color: white; /* Changes text color on hover */
+        border-radius: 5px; /* Adds rounded corners on hover */
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact us</a></li>
+
+        </ul>
+    </div>
+    
+</body>
+
+</html>
