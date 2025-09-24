@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         body {
             margin: 0;
@@ -13,52 +15,90 @@
             font-family: sans-serif;
         }
 
-        .header {
-        width: 100%;
-        height: 80px;
-        background-color: rgb(234, 201, 201);
-        /* Center the ul element within the header */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .nav ul a {
+            text-decoration: none;
 
-        .header ul {
-        display: flex; /* This arranges the li items horizontally */
-        list-style: none; /* Removes the bullet points */
-        padding: 0; /* Removes default browser padding */
-        margin: 0; /* Removes default browser margin */
-        gap: 30px; /* Adds space between the list items */
-    }
-   
-    .header ul li a {
-        text-decoration: none; /* Removes underline from links */
-        color: black; /* Sets link color */
-        font-size: 18px; /* Sets font size */
-        padding: 10px 15px; /* Adds padding for better click area */
-        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
-    }
-    .header ul li a:hover {
-        background-color: rgb(0, 0, 0); /* Changes background on hover */
-        color: white; /* Changes text color on hover */
-        border-radius: 5px; /* Adds rounded corners on hover */
-    }
-
-
+        }
+        nav {
+            padding: 1.5rem 0;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+         .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+         .nav-menu li {
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-menu li:hover {
+            color: #8B4513;
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #8B4513;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #8B4513;
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #fff;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .nav-menu li {
+                margin: 1rem 0;
+                text-align: center;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact us</a></li>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">Woven Traditions</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        </ul>
-    </div>
-    
 </body>
 
 </html>
