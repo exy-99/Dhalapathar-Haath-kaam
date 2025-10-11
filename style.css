@@ -217,7 +217,11 @@ nav {
   padding: 50px 20px;
   gap: 40px;
 }
-
+.story-title {
+  flex: 1;
+  font-size: 28px;
+  color: #8b4513;
+}
 
 
 @media (max-width: 768px) {
