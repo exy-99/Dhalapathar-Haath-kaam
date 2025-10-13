@@ -79,8 +79,7 @@ nav {
 }
 
 .hero {
-  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80")
-    no-repeat center center/cover;
+  background: url('handloom images/handloom-dhalapathar-cotton-ikat-saree-handloom-sareecotton-priyadarshini-handloom-492703.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -91,7 +90,7 @@ nav {
   text-align: left;
 }
 .hero-title {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
   max-width: 600px;
@@ -166,7 +165,7 @@ nav {
   transform: scale(1.05);
 }
 .product-title {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
   margin: 15px;
   color: #333;
@@ -196,32 +195,192 @@ nav {
   cursor: pointer;
   margin: 0 15px 15px 15px;
 }
-.story-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #8b4513;
-  padding-top: 50px;
-}
-.story-description {
-  text-align: center;
-  padding-top: 10px;
-  font-size: 20px;
-  margin-bottom: 40px;
-  color: #555;
-}
-.our-story {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 50px 20px;
-  gap: 40px;
+
+.product-button:hover {
+  background-color: #a0522d;
 }
 .story-title {
-  flex: 1;
   font-size: 28px;
   color: #8b4513;
+  margin-bottom: 20px;
+  text-align: center;
 }
+.story-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  padding: 50px 20px;
+  justify-content: center;
+}
+.text-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: left;
+  padding: 20px;
+  padding-top: 0px;
+}
+.text-content h2 {
+  font-size: 25px;
+  color: #3b200d;
+  margin-bottom: 15px;
+}
+.subheading {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #8b4513;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.cta-button:hover {
+  background-color: #a0522d;
+}
+
+.visual-content {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+        }
+.visual-content img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          
+          }
+/* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-color);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-column p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-light);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 999;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
 
 
 @media (max-width: 768px) {
