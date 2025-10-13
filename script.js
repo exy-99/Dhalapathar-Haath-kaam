@@ -15,3 +15,11 @@ const hamburger = document.getElementById("hamburger");
         }
       });
     });
+    
+const backToTop = document.getElementById('backToTop');
+      if (window.scrollY > 300) {
+                  backToTop.classList.add('active');
+              } else {
+                  backToTop.classList.remove('active');
+              }
+        
