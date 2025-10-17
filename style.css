@@ -287,7 +287,7 @@ footer {
   position: absolute;
   width: 40px;
   height: 2px;
-  background-color:  #8b4513;
+  background-color: #8b4513;
   bottom: 0;
   left: 0;
 }
@@ -314,7 +314,7 @@ footer {
   gap: 0.5rem;
 }
 .footer-links a:hover {
-  color:  #a0522d;
+  color: #a0522d;
   padding-left: 5px;
 }
 
@@ -363,7 +363,7 @@ footer {
   align-items: center;
   font-size: 1.2rem;
   cursor: pointer;
-  transition : all 0.3s ease;
+  transition: all 0.3s ease;
   opacity: 0;
   visibility: hidden;
   z-index: 999;
@@ -379,7 +379,76 @@ footer {
   background-color: #6b3300;
   transform: translateY(-3px);
 }
+.whatsapp {
+  height: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.whatsapp-logo {
+  height: 75px;
+  width: auto;
+  border-radius: 64px;
+}
+.whatsapp-logo:hover {
+  transform: scale(1.1);
+  box-shadow: #333 0px 0px 8px;
+}
+.forms {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.forms h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+.forms input[type="text"],
+.forms input[type="email"],
+.forms input[type="number"],
+.forms textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.forms input[type="number"] {
+  
 
+}
+.forms input:focus,
+.forms textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.forms button[type="submit"] {
+  background-color: #007bff; 
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; 
+}
+.forms button[type="submit"]:hover {
+  background-color: #0056b3; 
+}
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
