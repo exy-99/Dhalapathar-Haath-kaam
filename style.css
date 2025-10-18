@@ -253,6 +253,27 @@ nav {
   min-width: 300px;
   display: flex;
   justify-content: center;
+
+  position: relative; 
+  min-height: 350px;  
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+
 }
 .visual-content img {
   max-width: 70%;
@@ -262,6 +283,7 @@ nav {
 }
 
 footer {
+  margin-top: 20vh;
   background-color: #643101;
   color: whitesmoke;
   padding: 4rem 0 2rem;
@@ -380,17 +402,21 @@ footer {
   transform: translateY(-3px);
 }
 .whatsapp {
-  height: 50px;
   position: fixed;
-  bottom: 40px;
-  right: 10px;
+  bottom: 90px;
+  right: 27px;
   z-index: 1000;
   cursor: pointer;
+  display: inline-block;
+}
+.whatsapp a {
+  display: inline-block;
 }
 .whatsapp-logo {
-  height: 75px;
+  display: block; 
+  height: 56px; 
   width: auto;
-  border-radius: 64px;
+  border-radius: 27px;
 }
 .whatsapp-logo:hover {
   transform: scale(1.1);
@@ -426,10 +452,7 @@ footer {
   font-size: 16px;
   transition: border-color 0.3s ease;
 }
-.forms input[type="number"] {
-  
-
-}
+.forms input[type="number"] { }
 .forms input:focus,
 .forms textarea:focus {
   border-color: #007bff;

@@ -32,4 +32,21 @@ backToTop.addEventListener('click', () => {
   });
 });
 
+let currentSlide = 0;
+const slides = document.querySelectorAll(".visual-content .slide");
+const slideInterval = 2000; 
+
+function showNextSlide() {
+    if (slides.length > 0) {
+        slides[currentSlide].classList.remove("active");
+        
+        currentSlide = (currentSlide + 1) % slides.length;
+        
+        slides[currentSlide].classList.add("active");
+    }
+}
+
+if (slides.length > 0) {
+    setInterval(showNextSlide, slideInterval); 
+}
 
