@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Traditional Handloom Saree",
+    "description": "A beautiful handcrafted saree with traditional patterns.",
+    "image": "handloom images/001.jpeg",
+    "price": "$49.99"
+  },
+  {
+    "id": 2,
+    "name": "Cotton Ikat Curtain",
+    "description": "Handwoven cotton ikat curtain, perfect for your home.",
+    "image": "handloom images/002.jpeg",
+    "price": "$39.99"
+  },
+  {
+    "id": 3,
+    "name": "Handwoven Table Runner",
+    "description": "Elegant table runner made with natural dyes.",
+    "image": "handloom images/003.jpeg",
+    "price": "$24.99"
+  },
+  {
+    "id": 4,
+    "name": "Traditional Bedspread",
+    "description": "Warm and cozy bedspread with intricate designs.",
+    "image": "handloom images/004.jpeg",
+    "price": "$59.99"
+  }
+]
